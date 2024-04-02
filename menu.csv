@@ -1,0 +1,58 @@
+Item Name,Description,Price,Category
+Juke Joint House Salad,"""arcadian blend, fried onions, herb goat cheese, crunchy toasted pecans""",12,Brunch
+Fried Chicken & Eggs,"""juke joint brined boneless thights, eggs your way, parmesan cheese grits or breakfast potatoes""",16,Brunch
+Chicken Omelet,"""delia's chicken sausage, pico de gallo, sour cream, whole pickled jalepeno, breakfast potatoes""",18,Brunch
+Fried Chicken Benedict,"""two english muffins topped with spinach, fried green tomatoes, boneless fried chicken, poached eggs, hollandise, parmesan cheese grits""",19,Brunch
+Salmon Nash,"""grilled salmon, suny side up egg, bacon, roasted potatoes, caramelized onions, sun-dried tomato hollandaise""",20,Brunch
+Short Rib Hash,"""shredded short rib, herb pan sauce, sunny side up egg, roasted potatoes, caramelized onions""",22,Brunch
+Catfish Fingers,"""southern catfish, spicy pickle chips, honey mustard""",12,Dinner
+Classic Caesar Salad,"""romaine, caesar dressing, aged parm, cracked pepper toast points""",10,Dinner
+Juke Joint Fried Chicken Salad,"""fried chicken bites, greens, grape tomatoes, shredded cheese, egg, purple onions, and croutons""",18,Dinner
+Juke Joint Pulled Pork,"""sweet tea marinated, slowly smoked pork butt with signature barbecue sauce, collard green slaw, and steak fries""",18,Dinner
+Brasied Short Rib,"""boneless short rib, herb pan sauce, carrots, mashed potatoes, spinach""",27,Dinner
+Southern Starter,"""fried green tomatoes, crispy vidalia onion, fried okra, herb goat cheese, red pepper aioli""",13,All Day
+Bacon Wrapped Shrimp,"""brown-sugar cured applewood smoked bacon, shrimp""",12,All Day
+Juke Joint Wings,"""fried with our signature juke joint seasoning blend""",13,All Day
+Seafood Gumbo,"""andouille sausage, scallops, shrimp, crawfish, white rice""",10,All Day
+Chicken and Waffles,"""signature juke joint seasoning blend, fried; with housemade waffle and warm maple syrup""",18,All Day
+Shrimp & Grits or Catfish & Grits,"""signature tomato cream sauce, pepper, vidalia onion""",22,All Day
+Juke Joint Fried Chicken (Half),,22,All Day
+Juke Joint Cheeseburger,"""1/2 lb. of fresh ground beef, cheese, lettcue, tomato, onion and steak fries""",17,All Day
+Smothered Pork Chops,"""pan gravy, onion, white rice, green beans""",26,All Day
+Peach Glazed Grilled Salmon,"""grilled & glazed with caramalized peachers, mashed potatoes""",25,All Day
+Jambalaya Pasta,"""penne, crawfish, chicken, andouille sausage, tomato, creole cream sauce""",25,All Day
+Juke Joint Fried Chicken (Quarter),,19,All Day
+Green Beans,,6,Sides
+Collard Greens,,6,Sides
+Steak Fries,,6,Sides
+Collard Green Slaw,,6,Sides
+Mashed Potatoes,,6,Sides
+Permesan Cheese Grits,,6,Sides
+Southern Mac & Cheese,,6,Sides
+Fried Green Tomatoes,,6,Sides
+Fried Brussels Sprouts,,6,Sides
+Juke Joint Peach Cobbler,,8,Dessert
+Banana Pudding,,8,Dessert
+Spiced Apple Bread Pudding,,8,Dessert
+Shinegria,"""cat daddy moonshine, red wine, pineapple juice, triple sec, simple syrup""",12,Cocktails
+Miss Ceely's Punch,"""your flavor of moonshine, pineapple juice""",12,Cocktails
+Down South,"""firefly peach moonshine, sweet tea moonshine, lemonade, lemon""",12,Cocktails
+"Sneaky, Sneaky","""american born sweet tea moonshine, lmeonade, lemon""",12,Cocktails
+Juke Lemonade,"""your flavor of moonshine, juke joint lemonade, lemon""",12,Cocktails
+Moonshine Mule,"""dawsonville original moonshine, ginger beer, lemon, simple syrup""",12,Cocktails
+Peachtree Tea,"""whistlepig bourbon, peach schnapps, mint, soda""",12,Cocktails
+Mista's Margarita,"""choice of herradura silver or resposado, lime juice, sweet & sour, grand marnier, rosemary simple syrup""",14,Cocktails
+Traditional Negroni,"""bomboy, sweet wermouth, campari""",16,Cocktails
+Juke Joint Old Fashioned,"""whistlepig bourbon, bitters, simple syrup""",16,Cocktails
+Suge 7's,"""bombay, champagne, lemon juice, rosemary simple syrup""",13,Cocktails
+Sweet Georgia Peach-Tini,"""peach vodka, peach schnapps, orange juice""",12,Cocktails
+The Tuckerita,"""honey jack, grand marnier, sour mix, simple syrup""",13,Cocktails
+Millionare Mojito,"""rum, simple syrup,, muddled mint, lime""",13,Cocktails
+Magnificent Lemon,"""citron vodka, dash of sour mix, simple syrup""",12,Cocktails
+Grand Nearest,"""uncle nearest whiskey, triple sec, pineapple & sour""",12,Cocktails
+Darn 'N' Stormy,"""gosling's black seal rum, stormy ginger beer""",12,Cocktails
+Fountain Drinks & Iced Tea,,3,Non-Alcoholic Beverages
+Coffee,,5,Non-Alcoholic Beverages
+Pineapple Juice,,5,Non-Alcoholic Beverages
+Cranberry Juice,,5,Non-Alcoholic Beverages
+Orange Juice,,5,Non-Alcoholic Beverages

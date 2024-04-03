@@ -6,6 +6,7 @@ from nltk.stem import WordNetLemmatizer
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 import numpy as np
+import tkinter as tk
 
 # Load data
 faqs_df = pd.read_csv('faqs.csv', encoding='cp1252')
@@ -82,12 +83,46 @@ def get_response(user_input):
     else:
         return get_closest_faq(user_input)
 
-if __name__ == "__main__":
-    print("Welcome to Sweet Georgia's Juke Joint Chatbot! How can I assist you today? (Type 'quit' to exit)")
+def create_gui():
+    window = tk.Tk()
+    window.title("Sweet Georgia's Juke Joint Chatbot")
+
+    # Chat history display
+    chat_history_text = tk.Text(window, height=15, font=("Trebuchet MS", 12))  # Set font family and size for chat history
+    chat_history_text.pack(padx=10, pady=10)
+
+    # Define tags for styling
+    chat_history_text.tag_config("you", foreground="darkorange", font=("Trebuchet MS", 12, "bold"))
+    chat_history_text.tag_config("chatbot", foreground="black", font=("Trebuchet MS", 12, "bold"))
+
+    # Text entry box
+    user_input_entry = tk.Entry(window, font=("Trebuchet MS", 12), width=50)
+    user_input_entry.pack(padx=10, pady=10)
+
+    # Send button
+    send_button = tk.Button(window, text="Send", font=("Trebuchet MS", 12), bg="darkorange", relief="raised", command=lambda: send_message())
+    send_button.pack(padx=10, pady=10)
     
-    while True:
-        user_input = input("Please enter your question: ")
-        if user_input.lower() == 'quit':
-            break
+    window.configure(bg="antiquewhite")  # Set background color for the main window
+    chat_history_text.configure(bg="oldlace")
+    
+    # Welcome message
+    chat_history_text.insert(tk.END, "Welcome to Sweet Georgia's Juke Joint Chatbot!\nHow can I assist you today? (Type 'quit' to exit)\n")
+
+    def send_message():
+        user_input = user_input_entry.get()
+        chat_history_text.insert(tk.END, "You: ", "you")  # Apply "you" tag to the "You:" label
+        chat_history_text.insert(tk.END, user_input + "\n")
         response = get_response(user_input)
-        print(response)
+        chat_history_text.insert(tk.END, "Chatbot: ", "chatbot")  # Apply "chatbot" tag to the "Chatbot:" label
+        chat_history_text.insert(tk.END, response + "\n")
+        user_input_entry.delete(0, tk.END)
+        if user_input.lower() == 'quit':
+            window.destroy()  # Close the window when user types "quit"
+            return
+        
+    window.mainloop()
+
+
+if __name__ == "__main__":
+    create_gui()

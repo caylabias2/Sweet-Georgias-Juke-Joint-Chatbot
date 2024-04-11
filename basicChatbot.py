@@ -88,25 +88,28 @@ def create_gui():
     window.title("Sweet Georgia's Juke Joint Chatbot")
 
     # Chat history display
-    chat_history_text = tk.Text(window, height=15, font=("Trebuchet MS", 12))  # Set font family and size for chat history
-    chat_history_text.pack(padx=10, pady=10)
-
-    # Define tags for styling
+    chat_frame = tk.Frame(window)
+    chat_frame.pack(padx=10, pady=10, fill=tk.BOTH, expand=True)  # Allow the chat frame to expand in both directions
+    
+    chat_history_text = tk.Text(chat_frame, height=15, font=("Trebuchet MS", 12))
+    chat_history_text.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)  # Fill the available space in the chat frame
+    
+    # Scrollbar for the chat history text
+    scrollbar = tk.Scrollbar(chat_frame, command=chat_history_text.yview)
+    scrollbar.pack(side=tk.RIGHT, fill=tk.Y)  # Attach the scrollbar to the right side of the chat frame
+    chat_history_text.config(yscrollcommand=scrollbar.set)  # Connect scrollbar to the chat history text
+    
+    # Define tags for styling (same as before)
     chat_history_text.tag_config("you", foreground="darkorange", font=("Trebuchet MS", 12, "bold"))
     chat_history_text.tag_config("chatbot", foreground="black", font=("Trebuchet MS", 12, "bold"))
 
-    # Text entry box
+    # Text entry box, send button, welcome message (same as before)
     user_input_entry = tk.Entry(window, font=("Trebuchet MS", 12), width=50)
     user_input_entry.pack(padx=10, pady=10)
-
-    # Send button
     send_button = tk.Button(window, text="Send", font=("Trebuchet MS", 12), bg="darkorange", relief="raised", command=lambda: send_message())
     send_button.pack(padx=10, pady=10)
-    
-    window.configure(bg="antiquewhite")  # Set background color for the main window
+    window.configure(bg="antiquewhite")
     chat_history_text.configure(bg="oldlace")
-    
-    # Welcome message
     chat_history_text.insert(tk.END, "Welcome to Sweet Georgia's Juke Joint Chatbot!\nHow can I assist you today? (Type 'quit' to exit)\n")
 
     def send_message():
